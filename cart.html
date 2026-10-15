@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Hiệu sách của Dread</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- ĐẦU TRANG -->
+    <header class="site-header">
+        <h1>Hiệu sách của Dread</h1>
+        <nav class="main-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html">Đăng ký</a>
+            <a href="cart.html" class="active">Giỏ hàng (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <main>
+        <h2>Giỏ hàng của bạn</h2>
+        <p id="cart-empty">Giỏ hàng đang trống. <a href="index.html">Tiếp tục mua sách</a></p>
+
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Sách</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body"></tbody>
+        </table>
+        <p class="cart-total">Tổng cộng: <strong id="cart-total">0 đ</strong></p>
+
+        <p>
+            <button type="button" id="clear-cart">Xóa giỏ hàng</button>
+        </p>
+    </main>
+
+    <!-- CHÂN TRANG -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Hiệu sách của Dread. Nơi mỗi trang sách mở ra một thế giới mới.</p>
+    </footer>
+</body>
+</html>
